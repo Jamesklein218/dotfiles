@@ -1,0 +1,10 @@
+configstore
+.DS_Store
+ghc
+firebase
+flipper
+iterm2
+yarn
+nvim/plugged/*
+nvim/bundle/*
+nvim/pack/*
