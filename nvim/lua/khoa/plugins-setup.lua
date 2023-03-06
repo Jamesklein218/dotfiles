@@ -12,6 +12,9 @@ Plug('bluz71/vim-moonfly-colors',{ branch = 'cterm-compat' })
 Plug('tpope/vim-surround')
 
 -- Replace register ('gr') 
+Plug('vim-scripts/ReplaceWithRegister')
+
+-- Tmux
 Plug('christoomey/vim-tmux-navigator') -- tmux & split window navigation
 
 -- Comment ('gc')
