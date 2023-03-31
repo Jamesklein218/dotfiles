@@ -2,20 +2,28 @@ local Plug = vim.fn['plug#']
 
 vim.call('plug#begin', '~/.config/nvim/plugged')
 
--- NERDTree
-Plug('preservim/nerdtree')
+-- Tree
+Plug('nvim-tree/nvim-tree.lua')
+
+-- Icon 
+Plug('nvim-tree/nvim-web-devicons')
+
+-- Status line
+Plug('nvim-lualine/lualine.nvim')
 
 -- Theme
-Plug('bluz71/vim-moonfly-colors',{ branch = 'cterm-compat' }) 
+Plug('rebelot/kanagawa.nvim')
+
+-- Files and Finder
+Plug('nvim-lua/plenary.nvim')
+Plug('junegunn/fzf', {['do'] = vim.fn['fzf#install']})
+Plug('junegunn/fzf.vim')
 
 -- Surrounding
 Plug('tpope/vim-surround')
 
 -- Replace register ('gr') 
 Plug('vim-scripts/ReplaceWithRegister')
-
--- Tmux
-Plug('christoomey/vim-tmux-navigator') -- tmux & split window navigation
 
 -- Comment ('gc')
 Plug('numToStr/Comment.nvim')
