@@ -8,3 +8,7 @@ yarn
 nvim/plugged/*
 nvim/bundle/*
 nvim/pack/*
+rstudio/
+htop/
+lvim.old/
+lvim/
