@@ -4,6 +4,7 @@ require("khoa.core.keymaps")
 require("khoa.core.colorscheme")
 require("khoa.plugins.comment")
 require("khoa.plugins.nvim-tree")
-require("khoa.plugins.nvim-cmd")
+require("khoa.plugins.nvim-cmp")
 require("khoa.plugins.lualine")
+require("khoa.plugins.lsp.mason")
 

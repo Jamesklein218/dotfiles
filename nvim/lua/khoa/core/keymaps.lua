@@ -4,8 +4,8 @@ vim.g.mapleader = ','
 local keymap = vim.keymap -- for conciseness
 
 -- new line without Insert Mode
-keymap.set("n", "o", "O<Esc>")
-keymap.set("n", "O", "o<Esc>")
+keymap.set("n", "O", "O<Esc>")
+keymap.set("n", "o", "o<Esc>")
 
 -- windows setting
 keymap.set("n", "<leader>x", ":tabclose<CR>") -- close tab

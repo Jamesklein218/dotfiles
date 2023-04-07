@@ -28,15 +28,22 @@ Plug('vim-scripts/ReplaceWithRegister')
 -- Comment ('gc')
 Plug('numToStr/Comment.nvim')
 
--- Auto Completing
-Plug("hrsh7th/nvim-cmp") -- completion plugin
-Plug("hrsh7th/cmp-buffer") -- source for text in buffer
-Plug("hrsh7th/cmp-path") -- source for file system paths
+-- Snippets
+Plug('L3MON4D3/LuaSnip')
+Plug('saadparwaiz1/cmp_luasnip')
+Plug('rafamadriz/friendly-snippets')
 
--- snippets
-Plug("L3MON4D3/LuaSnip") -- snippet engine
-Plug("saadparwaiz1/cmp_luasnip") -- for autocompletion
-Plug("rafamadriz/friendly-snippets") -- useful snippets
+-- Autocompletion
+Plug('hrsh7th/nvim-cmp')
+Plug('hrsh7th/cmp-buffer')
+Plug('hrsh7th/cmp-path')
+
+-- Managing LSP Server
+Plug('williamboman/mason.nvim')
+Plug('williamboman/mason-lspconfig.nvim')
+
+-- Configuring LSP
+Plug('neovim/nvim-lspconfig')
 
 vim.call('plug#end')
 
