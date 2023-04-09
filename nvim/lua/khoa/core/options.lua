@@ -1,6 +1,6 @@
 local opt = vim.opt
 
--- line number 
+-- line number
 opt.number = true
 opt.relativenumber = true
 
@@ -10,7 +10,7 @@ opt.shiftwidth = 4
 opt.expandtab = true
 opt.autoindent = true
 
--- wrapping 
+-- wrapping
 opt.wrap = false
 
 -- searching
@@ -32,7 +32,7 @@ opt.backspace = "indent,eol,start"
 -- opt.clipboard:append("unnamedplus")
 
 -- cursort style
-opt.guicursor="n-v-c-i:block"
+-- opt.guicursor="n-v-c-i:block"
 
 -- window split
 opt.splitright = true

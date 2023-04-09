@@ -28,7 +28,7 @@ mason_lspconfig.setup({
 		"tailwindcss",
 		"lua_ls",
 		"emmet_ls",
-		"clangd",
+		"clangd", -- Cpp
 		"tsserver", -- Typescript
 		"marksman", -- Markdown
 	},
@@ -42,8 +42,8 @@ mason_null_ls.setup({
 		"prettier", -- ts/js formatter
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
-		"clang-format",
-		"cpplint",
+		"clang-format", -- cpp formatter
+		"cpplint", --
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
