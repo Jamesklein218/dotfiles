@@ -109,3 +109,21 @@ lspconfig["lua_ls"].setup({
 		},
 	},
 })
+
+-- configure C/C++ server
+lspconfig["clangd"].setup({
+	capabilities = capabilities,
+	on_attach = on_attach,
+	filetypes = { "c", "h", "cpp", "hpp", "objc", "objcpp", "cuda", "proto" },
+	cmd = { "clangd" },
+	root_dir = lspconfig.util.root_pattern(
+		".clangd",
+		".clang-tidy",
+		".clang-format",
+		"compile_commands.json",
+		"compile_flags.txt",
+		"configure.ac",
+		".git"
+	),
+	single_file_support = true,
+})

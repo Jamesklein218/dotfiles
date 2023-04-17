@@ -2,6 +2,9 @@ local Plug = vim.fn["plug#"]
 
 vim.call("plug#begin", "~/.config/nvim/plugged")
 
+-- Discord Presense
+Plug("andweeb/presence.nvim")
+
 -- Tree
 Plug("nvim-tree/nvim-tree.lua")
 

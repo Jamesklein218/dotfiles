@@ -1,5 +1,5 @@
 -- keymap setup
-vim.g.mapleader = ','
+vim.g.mapleader = ","
 
 local keymap = vim.keymap -- for conciseness
 
@@ -18,4 +18,3 @@ keymap.set("n", "<leader>t", ":NvimTreeToggle<CR>") -- toggle file explorer
 -- fzf
 keymap.set("n", "<leader>ff", ":Files<CR>") -- toggle file explorer
 keymap.set("n", "<leader>fg", ":GFiles<CR>") -- toggle file explorer
-
