@@ -115,7 +115,10 @@ lspconfig["clangd"].setup({
 	capabilities = capabilities,
 	on_attach = on_attach,
 	filetypes = { "c", "h", "cpp", "hpp", "objc", "objcpp", "cuda", "proto" },
-	cmd = { "clangd" },
+	cmd = {
+		"clangd",
+		"--query-driver=/usr/local/include/",
+	},
 	root_dir = lspconfig.util.root_pattern(
 		".clangd",
 		".clang-tidy",

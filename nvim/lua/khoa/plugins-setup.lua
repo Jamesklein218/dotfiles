@@ -59,4 +59,12 @@ Plug("windwp/nvim-autopairs")
 Plug("jose-elias-alvarez/null-ls.nvim")
 Plug("jayp0521/mason-null-ls.nvim")
 
+-- Tree Sitter
+Plug("nvim-treesitter/nvim-treesitter", {
+	run = function()
+		local ts_update = require("nvim-treesitter.install").update({ with_sync = true })
+		ts_update()
+	end,
+})
+
 vim.call("plug#end")
