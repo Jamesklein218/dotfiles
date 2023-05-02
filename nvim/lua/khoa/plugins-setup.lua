@@ -19,8 +19,10 @@ Plug("rebelot/kanagawa.nvim")
 
 -- Files and Finder
 Plug("nvim-lua/plenary.nvim")
-Plug("junegunn/fzf", { ["do"] = vim.fn["fzf#install"] })
-Plug("junegunn/fzf.vim")
+Plug("nvim-telescope/telescope-fzf-native.nvim", {
+	["do"] = vim.fn["make"],
+})
+Plug("nvim-telescope/telescope.nvim", { tag = "0.1.1" })
 
 -- Surrounding
 Plug("tpope/vim-surround")
