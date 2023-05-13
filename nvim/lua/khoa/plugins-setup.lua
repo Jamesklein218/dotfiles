@@ -2,6 +2,18 @@ local Plug = vim.fn["plug#"]
 
 vim.call("plug#begin", "~/.config/nvim/plugged")
 
+-- Tab bar
+Plug("romgrk/barbar.nvim")
+
+-- Tmux navigator
+Plug("christoomey/vim-tmux-navigator")
+
+-- Git signs (Git Lens for nvim)
+Plug("lewis6991/gitsigns.nvim")
+
+-- Smoother scrolling
+Plug("karb94/neoscroll.nvim")
+
 -- Discord Presense
 Plug("andweeb/presence.nvim")
 
