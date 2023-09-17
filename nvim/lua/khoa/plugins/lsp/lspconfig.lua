@@ -130,3 +130,11 @@ lspconfig["clangd"].setup({
 	),
 	single_file_support = true,
 })
+
+-- configure Golang server
+lspconfig["gopls"].setup({
+	cmd = { "gopls" },
+	filetypes = { "go", "gomod", "gowork", "gotmpl" },
+	root_dit = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
+	single_file_support = true,
+})

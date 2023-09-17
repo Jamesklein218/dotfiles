@@ -31,6 +31,7 @@ mason_lspconfig.setup({
 		"clangd", -- Cpp
 		"tsserver", -- Typescript
 		"marksman", -- Markdown
+		"gopls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed
@@ -43,7 +44,8 @@ mason_null_ls.setup({
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
 		"clang-format", -- cpp formatter
-		"cpplint", --
+		"cpplint", --cpp lint
+		"golangci-lint",
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
