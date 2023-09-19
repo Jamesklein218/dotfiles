@@ -2,6 +2,9 @@ local Plug = vim.fn["plug#"]
 
 vim.call("plug#begin", "~/.config/nvim/plugged")
 
+-- Git Blamer
+Plug("f-person/git-blame.nvim")
+
 -- Tab bar
 Plug("romgrk/barbar.nvim")
 
@@ -62,7 +65,7 @@ Plug("williamboman/mason-lspconfig.nvim")
 -- Configuring LSP
 Plug("neovim/nvim-lspconfig")
 Plug("hrsh7th/cmp-nvim-lsp")
-Plug("glepnir/lspsaga.nvim", { branch = "main" })
+Plug("nvimdev/lspsaga.nvim", { branch = "main" })
 Plug("jose-elias-alvarez/typescript.nvim")
 Plug("onsails/lspkind.nvim")
 
