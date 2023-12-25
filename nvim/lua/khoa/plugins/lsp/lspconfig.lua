@@ -27,6 +27,8 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "gf", "<cmd>Lspsaga lsp_finder<CR>", opts) -- show definition, references
 	keymap.set("n", "gD", "<Cmd>Lspsaga goto_definition<CR>", opts) -- got to definition
 	keymap.set("n", "gd", "<cmd>Lspsaga peek_definition<CR>", opts) -- see definition and make edits in window
+	keymap.set("n", "gL", "<cmd>Lspsaga show_line_diagnostics<CR>", opts) -- show line error msg
+	keymap.set("n", "gC", "<cmd>Lspsaga show_cursor_diagnostics<CR>", opts) -- show cursor error msg
 	keymap.set("n", "<leader>ca", "<cmd>Lspsaga code_action<CR>", opts) -- see available code actions
 	keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
 	keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
