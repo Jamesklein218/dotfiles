@@ -33,7 +33,7 @@ opt.backspace = "indent,eol,start"
 -- opt.clipboard:append("unnamedplus")
 
 -- cursort style
--- opt.guicursor="n-v-c-i:block"
+opt.guicursor = "n-v-c-i:block"
 
 -- window split
 opt.splitright = true
