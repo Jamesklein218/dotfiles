@@ -135,3 +135,20 @@ lspconfig["gopls"].setup({
 	root_dit = lspconfig.util.root_pattern("go.work", "go.mod", ".git"),
 	single_file_support = true,
 })
+
+-- configure Python Server
+lspconfig["pyright"].setup({
+	on_attach = on_attach,
+	capabilities = capabilities,
+	filetypes = { "python" },
+	settings = {
+		python = {
+			analysis = {
+				autoSearchPaths = true,
+				diagnosticMode = "workspace",
+				useLibraryCodeForTypes = true,
+			},
+		},
+	},
+	single_file_support = true,
+})
