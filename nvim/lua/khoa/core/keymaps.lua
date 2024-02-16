@@ -8,7 +8,7 @@ keymap.set("n", "O", "O<Esc>")
 keymap.set("n", "o", "o<Esc>")
 
 -- windows setting
-keymap.set("n", "<leader>x", ":tabclose<CR>") -- close tab
+keymap.set("n", "<leader>c", ":tabclose<CR>") -- close tab
 keymap.set("n", "<leader>n", ":tabn<CR>") --  go to next tab
 keymap.set("n", "<leader>p", ":tabp<CR>") --  go to previous tab
 
