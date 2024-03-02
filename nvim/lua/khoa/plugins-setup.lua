@@ -31,6 +31,7 @@ Plug("nvim-lualine/lualine.nvim")
 
 -- Theme
 Plug("rebelot/kanagawa.nvim")
+Plug("daltonmenezes/aura-theme", { rtp = "packages/neovim" })
 
 -- Files and Finder
 Plug("nvim-lua/plenary.nvim")
@@ -83,5 +84,8 @@ Plug("nvim-treesitter/nvim-treesitter", {
 		ts_update()
 	end,
 })
+
+-- Document outlining
+Plug("simrat39/symbols-outline.nvim")
 
 vim.call("plug#end")
