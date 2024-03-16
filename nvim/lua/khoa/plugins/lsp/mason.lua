@@ -31,8 +31,10 @@ mason_lspconfig.setup({
 		"clangd", -- Cpp
 		"tsserver", -- Typescript
 		"marksman", -- Markdown
-		"gopls",
-		"pyright",
+		"gopls", -- Golang
+		"pyright", -- Python
+		"docker_compose_language_service", -- Docker compose
+		"dockerls", -- Dockerfile
 	},
 	-- auto-install configured servers (with lspconfig)
 	automatic_installation = true, -- not the same as ensure_installed

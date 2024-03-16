@@ -152,3 +152,10 @@ lspconfig["pyright"].setup({
 	},
 	single_file_support = true,
 })
+
+-- configure Docker and Docker Compose
+lspconfig["dockerls"].setup({})
+lspconfig["docker_compose_language_service"].setup({})
+
+lspconfig["drools_lsp"].setup({})
+vim.cmd([[ autocmd BufRead,BufNewFile *.drl set filetype=drools ]])
