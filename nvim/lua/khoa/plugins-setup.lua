@@ -31,7 +31,8 @@ Plug("nvim-lualine/lualine.nvim")
 
 -- Theme
 Plug("rebelot/kanagawa.nvim")
-Plug("daltonmenezes/aura-theme", { rtp = "packages/neovim" })
+-- Plug("daltonmenezes/aura-theme", { rtp = "packages/neovim" })
+Plug("techtuner/aura-neovim")
 
 -- Files and Finder
 Plug("nvim-lua/plenary.nvim")
