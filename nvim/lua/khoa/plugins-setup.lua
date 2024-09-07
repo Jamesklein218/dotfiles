@@ -15,7 +15,7 @@ Plug("christoomey/vim-tmux-navigator")
 Plug("lewis6991/gitsigns.nvim")
 
 -- Smoother scrolling
-Plug("karb94/neoscroll.nvim")
+-- Plug("karb94/neoscroll.nvim")
 
 -- Discord Presense
 Plug("andweeb/presence.nvim")
