@@ -10,12 +10,6 @@ if not cmp_nvim_lsp_status then
 	return
 end
 
--- import typescript plugin safely
-local typescript_setup, typescript = pcall(require, "typescript")
-if not typescript_setup then
-	return
-end
-
 local keymap = vim.keymap -- for conciseness
 
 -- enable keybinds only for when lsp server available
@@ -33,13 +27,6 @@ local on_attach = function(client, bufnr)
 	keymap.set("n", "<leader>rn", "<cmd>Lspsaga rename<CR>", opts) -- smart rename
 	keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts) -- show documentation for what is under cursor
 	keymap.set("n", "<A-d>", "<cmd>Lspsaga term_toggle<CR>", opts) -- toggle terminal
-
-	-- typescript specific keymaps (e.g. rename file and update imports)
-	if client.name == "tsserver" then
-		keymap.set("n", "<leader>rf", ":TypescriptRenameFile<CR>") -- rename file and update imports
-		keymap.set("n", "<leader>oi", ":TypescriptOrganizeImports<CR>") -- organize imports (not in youtube nvim video)
-		keymap.set("n", "<leader>ru", ":TypescriptRemoveUnused<CR>") -- remove unused variables (not in youtube nvim video)
-	end
 end
 
 -- used to enable autocompletion (assign to every lsp server config)
@@ -60,7 +47,7 @@ lspconfig["html"].setup({
 })
 
 -- configure typescript server with plugin
-typescript.setup({
+lspconfig["ts_ls"].setup({
 	server = {
 		capabilities = capabilities,
 		on_attach = on_attach,
