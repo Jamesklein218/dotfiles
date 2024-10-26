@@ -100,9 +100,9 @@ lspconfig["clangd"].setup({
 	on_attach = on_attach,
 	cmd = {
 		"clangd",
+		"--offset-encoding=utf-16",
 		"--query-driver=/usr/local/include/", -- For #include <bits/stdc++.h>
 	},
-	offset_encoding = "utf-8",
 	-- root_dir = lspconfig.util.root_pattern(
 	-- 	".clangd",
 	-- 	".clang-tidy",
@@ -145,3 +145,7 @@ lspconfig["docker_compose_language_service"].setup({})
 
 lspconfig["drools_lsp"].setup({})
 vim.cmd([[ autocmd BufRead,BufNewFile *.drl set filetype=drools ]])
+
+lspconfig["zls"].setup({
+	on_attach = on_attach,
+})

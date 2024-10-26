@@ -8,6 +8,9 @@ Plug("f-person/git-blame.nvim")
 -- Tab bar
 Plug("romgrk/barbar.nvim")
 
+-- Grapple: File navigation
+-- Plug("cbochs/grapple.nvim")
+
 -- Tmux navigator
 Plug("christoomey/vim-tmux-navigator")
 
@@ -31,8 +34,9 @@ Plug("nvim-lualine/lualine.nvim")
 
 -- Theme
 Plug("rebelot/kanagawa.nvim")
+Plug("folke/tokyonight.nvim")
 -- Plug("daltonmenezes/aura-theme", { rtp = "packages/neovim" })
-Plug("techtuner/aura-neovim")
+-- Plug("techtuner/aura-neovim")
 
 -- Files and Finder
 Plug("nvim-lua/plenary.nvim")
