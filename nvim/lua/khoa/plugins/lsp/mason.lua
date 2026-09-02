@@ -28,10 +28,8 @@ mason_lspconfig.setup({
 		"lua_ls",
 		"emmet_ls",
 		"clangd", -- Cpp
-		"ts_ls", -- Typescript
 		"marksman", -- Markdown
 		"gopls", -- Golang
-		"pyright", -- Python
 		"docker_compose_language_service", -- Docker compose
 		"dockerls", -- Dockerfile
 		"zls", -- Zig
@@ -43,13 +41,13 @@ mason_lspconfig.setup({
 mason_null_ls.setup({
 	-- list of formatters & linters for mason to install
 	ensure_installed = {
-		"prettier", -- ts/js formatter
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
 		"clang-format", -- cpp formatter
 		"cpplint", -- cpp linter
-		"golangci-lint", -- golang linter
-		"flake8", -- python linter
+		"gofumpt", -- Go formatting
+		"goimports", -- formatting + automatic installation
+		"golangci-lint"
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,

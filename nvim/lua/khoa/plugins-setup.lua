@@ -69,17 +69,16 @@ Plug("williamboman/mason.nvim")
 Plug("williamboman/mason-lspconfig.nvim")
 
 -- Configuring LSP
-Plug("neovim/nvim-lspconfig")
+Plug("neovim/nvim-lspconfig", { tag = "v2.5.0"})
 Plug("hrsh7th/cmp-nvim-lsp")
 Plug("nvimdev/lspsaga.nvim", { branch = "main" })
-Plug("jose-elias-alvarez/typescript.nvim")
 Plug("onsails/lspkind.nvim")
 
 -- Auto Closing
 Plug("windwp/nvim-autopairs")
 
 -- formatting & linting
-Plug("jose-elias-alvarez/null-ls.nvim")
+Plug("nvimtools/none-ls.nvim")
 Plug("jayp0521/mason-null-ls.nvim")
 
 -- Tree Sitter
