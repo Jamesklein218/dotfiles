@@ -1,0 +1,10 @@
+*
+!.gitignore
+!.tmux.conf
+!nvim/
+!README.md
+!nvim/**
+
+nvim/plugged/
+nvim/bundle/
+nvim/pack/
