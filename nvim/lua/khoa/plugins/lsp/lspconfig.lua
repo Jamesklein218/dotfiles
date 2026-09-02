@@ -148,7 +148,6 @@ vim.cmd([[ autocmd BufRead,BufNewFile *.drl set filetype=drools ]])
 
 lspconfig["zls"].setup({
 	on_attach = on_attach,
-=======
 local ok, lspconfig = pcall(require, "lspconfig")
 if not ok then
     return
